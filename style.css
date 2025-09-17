@@ -1,161 +1,103 @@
-@font-face {
-    font-family: Futura Bold;
-    src: url(Asset/FUTURA75BOLD.TTF);
-}
-
-@font-face {
-    font-family: FuturaBT;
-    src: url(Asset/FuturaBT-Book.otf);
-}
-
-.backgroundLogin{
-    background-image: url(Asset/Frame\ 15.png); 
-    background-size:auto
-}
-
 body{
-  font-family: FuturaBT;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-input{
-    background-color: rgb(255, 255, 255);
-    border: none;
-    padding: 30px 60px 30px 60px;
-    border-radius: 15px;
-    font-size: 24px;
-    width: 100%;
-    text-align: left;
-    margin: 10px 0px;
-    display: block;
-    overflow: hidden
-  }
-  input::placeholder {
-    
-  }
-
-  input:focus{
-    background-color: rgb(255, 255, 255);
-}
-p{
-    font-family: FuturaHvBT;
-    font-size: 24px;
-    font-weight: 400;
+    font-family: Helvetica;
 }
 
 h1{
-    font-family: Futura Bold;
-    font-size: 60px;
+    font-family: Helvetica Bold;
+}
+ .center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  @font-face {
+    font-family: Helvetica;
+    src: url(D:\GFX ADOBE\Font Saya\Helvetica.ttf);
+  }
+
+  @font-face {
+    font-family: Helvetica Bold;
+    src: url(Helvetica-Bold.ttf);
+  }
+
+input{
+    
+    background-color: rgb(243, 243, 243);
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    padding-left: 20px;
+    border-radius: 5px;
+}
+
+input:focus{
+    background-color: rgba(255, 255, 255, 100%);
+    border: 3px rgb(rgb(141, 141, 141), green, blue);
+
+}
+
+.fix{
+    padding-right: 10px;
+}
+
+
+.simpan{
+    background-color: rgb(126, 223, 255);
+    color: white;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-top: 20px;
+}
+.simpan:hover{
+    background-color: rgb(194, 194, 194);
+    stroke: #B4FDED;
+    color: #616161;
+}
+.shape{
+    background-image: url(waves.svg);
+}
+
+.custom-shape-divider-top-1710082539 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1710082539 svg {
+    position: relative;
+    display: block;
+    width: calc(214% + 1.3px);
+    height: 492px;
+}
+
+.custom-shape-divider-top-1710082539 .shape-fill {
+    fill: #D2FAFF;
+}
+h1{
+    padding-bottom: 20px;
+}
+td{
+    padding-bottom: 5px;
 }
 
 button{
-    padding: 20px 90px 20px 90px;
-    margin-top: 40px;
-    border-radius: 15px;
     border: none;
-    font-family: Futura Bold;
-    color: white;
-    background-color: #A49E23;
-    font-size: 32px;
-    width: 100%;
-}
-
-button:active{
-    background-color: #cfc722;
-}
-
-button:hover{
-    background-color: #cfc722;
-}
-
-.bag{
-    background-color: #091B34;
-    color: white;
-    border-radius: 20px;
-    padding: 80px 120px 80px 120px;
-    box-shadow: 5px 10px 17px -9px rgba(0,0,0,0.53);
--webkit-box-shadow: 5px 10px 17px -9px rgba(0,0,0,0.53);
--moz-box-shadow: 5px 10px 17px -9px rgba(0,0,0,0.53);
-}
-
-
-ul{
-    background-color: #091B34;
-    overflow: hidden;
-
-}
-
-.nav-color{
-    display: block;
-  padding: 0.5rem 1rem;
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 0.25rem;
-  transition: background-color 0.2s ease;
-  font-family: FuturaBT;
-}
-
-.bgHome{
-    background-image: url(Asset/BG\ LOGIN.jpg);
-    width: 100%;
-}
-.error{
-    text-align: end;
-    font-size: 18px;
-    color: red;
-}
-
-@media screen and (max-width:1368px) {
-    .bag{
-        padding: 60px 50px 60px 50px
-    }
-
-    input{
-        padding: 15px 30px 15px 30px;
-        font-size: 12px;
-        margin-top: 2px;
-    }
-    button{
-        padding: 15px 30px 15px 30px;
-        font-size: 12px;
-    }
-    h1{
-        font-size: 32px;
-    }
-    p{
-        font-size: 12px;
-    }
-    .bag{
-        padding: 50px 70px 50px 70px;
-    }
-    
-    button, input{
-        border-radius: 10px;
-    }
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    padding-left: 20px;
+    border-radius: 5px;
     
 }
 
-@media screen and (max-width:468px){
-    .bag{
-        padding: 30px 35px;
-    }
-    .input{
-        padding: 5px 10px;
-        font-size: 8px;
-        display: flex;
-        
-    }
-    p{
-        font-size: 8px;
-    }
-    h1{
-        font-size: 20px;
-    }
+br{
+    margin-bottom: 5px;
 }
-
-
